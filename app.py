@@ -4,10 +4,6 @@ app = Flask(__name__)
 
 @app.route('/status', methods=['GET'])
 def status():
-    return "Server is running"
-
-@app.route("/status")
-def status():
     return jsonify({"status": "ok"}), 200
 
 if __name__ == "__main__":
