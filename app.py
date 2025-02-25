@@ -2,9 +2,9 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def home():
-    return jsonify({"message": "API funcionando!"})
+    return "Test API"
 
 @app.route("/status")
 def status():
